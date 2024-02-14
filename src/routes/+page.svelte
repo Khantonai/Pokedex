@@ -794,6 +794,7 @@
                 </div>
               {/if}
               <img
+                on:contextmenu|preventDefault
                 src={`https://www.pokencyclopedia.info/sprites/spin-off/ico_shuffle/ico_shuffle_${pokemonList[
                   caughtPokemon[i]
                 ].pokedexId
