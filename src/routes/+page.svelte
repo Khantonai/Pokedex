@@ -235,6 +235,11 @@
         contextMenuVisible = false;
       }
     });
+    document.querySelectorAll('#boite-pc .sprite').forEach(img => {
+      img.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+      });
+    });
 
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
